@@ -14,7 +14,7 @@ description              : &description "PhD researcher"
 url                      : https://B-Deforce.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "B-Deforce/B-Deforce.github.io"
-teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Boje Deforce"
-  avatar           : "profile.png"
+  avatar           : "bd_pic.jpg"
   bio              : "PhD researcher at KU Leuven, currently focused on data science for IoT applications"
   location         : "Belgium"
   employer         :
