@@ -9,7 +9,7 @@ redirect_from:
 ---
 *“The purpose of models is not to fit the data, but to sharpen the questions”* - [Samuel Karlin](https://en.wikipedia.org/wiki/Samuel_Karlin)
 
-PhD researcher \@[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-and-information-management/liris/liris) under the supervision of Prof. Estefanía Serral Asensio, Prof. [Bart Baesens](https://www.bartbaesens.com/), and Prof. Jan Diels. I currently focus on AI/ML-solutions for the Internet of Things (i.e. time-series).
+PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-and-information-management/liris/liris) under the supervision of Prof. Estefanía Serral Asensio, Prof. [Bart Baesens](https://www.bartbaesens.com/), and Prof. Jan Diels. I currently focus on AI/ML-solutions for the Internet of Things (i.e. time-series).
 
 
 Feel free to reach out at boje.deforce\[at\]kuleuven.be
