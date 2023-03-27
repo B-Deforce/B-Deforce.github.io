@@ -24,7 +24,7 @@
 
 {% assign counter = 0 %}
 
-
+ 
 <ol>
 {% for citation in pub_list %}
   {% if include.venue %}
