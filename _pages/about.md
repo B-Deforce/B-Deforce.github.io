@@ -15,13 +15,16 @@ PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-a
 Feel free to reach out at boje.deforce\[at\]kuleuven.be
 
 ### News
-*Jan 2023*: We extended our work with the Temporal Fusion Transformer, presented in Vegas, to a journal paper and submitted to the journal of Applied Soft Computing
+📢 *May 2023*: Our paper *"MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers"* has been accepted at [CoLLAs 2023](https://lifelong-ml.cc) :tada:. See you there!
 
 
-*July 2022*: We'll be presenting our work on forecasting sensor data in smart agriculture with Temporal Fusion Transformers at ICDATA 2022 in Las Vegas, USA
+📢 *Jan 2023*: We extended our work with the Temporal Fusion Transformer, presented in Vegas, to a journal paper and submitted to the journal of Applied Soft Computing
 
 
-*May 2022*: Our work on self-supervised anomaly detection will be presented at a workshop on PAKDD 2022 in Chengdu, China
+📢 *July 2022*: We'll be presenting our work on forecasting sensor data in smart agriculture with Temporal Fusion Transformers at ICDATA 2022 in Las Vegas, USA
 
 
-*Feb 2021*: I officialy started my PhD at the Research Center for Information Systems Engineering - KU Leuven, Belgium.
+📢 *May 2022*: Our work on self-supervised anomaly detection will be presented at a workshop on PAKDD 2022 in Chengdu, China
+
+
+📢 *Feb 2021*: I officialy started my PhD at the Research Center for Information Systems Engineering - KU Leuven, Belgium.
