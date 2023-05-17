@@ -15,7 +15,7 @@ PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-a
 Feel free to reach out at boje.deforce\[at\]kuleuven.be
 
 ### News
-📢 *May 2023*: Our paper *"MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers"* has been accepted at [CoLLAs 2023](https://lifelong-ml.cc) :tada:. See you there!
+📢 *May 2023*: Our paper *"MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers"* has been accepted at [CoLLAs 2023](https://lifelong-ml.cc) 🎉. See you there!
 
 
 📢 *Jan 2023*: We extended our work with the Temporal Fusion Transformer, presented in Vegas, to a journal paper and submitted to the journal of Applied Soft Computing
