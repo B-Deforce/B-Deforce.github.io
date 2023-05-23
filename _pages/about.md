@@ -15,6 +15,9 @@ PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-a
 Feel free to reach out at boje.deforce\[at\]kuleuven.be
 
 ### News
+📢 *May 2023*: I will be doing a research visit over the summer (July-September) at Carnegie Mellon University with Prof. [Leman Akoglu](https://www.andrew.cmu.edu/user/lakoglu/) to work on Self-Supervised Anomaly Detection!
+
+
 📢 *May 2023*: Our paper *"MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers"* has been accepted at [CoLLAs 2023](https://lifelong-ml.cc) 🎉. See you there!
 
 
