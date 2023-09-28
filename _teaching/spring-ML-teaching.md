@@ -1,8 +1,7 @@
 ---
-title: "Introduction to Data Analytics (6 hours)"
+title: "Introduction to Data Analytics"
 collection: teaching
 type: "Undergraduate course session"
-permalink: /teaching/spring-ML-teaching
 venue: "KU Leuven, Bachelors of Business Administration"
 location: "Brussels, Belgium"
 ---
