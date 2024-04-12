@@ -1,5 +1,7 @@
-﻿Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
-"Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ",MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers,Proceedings of Machine Learning Research,,,,2023,
-"Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ",Forecasting Sensor-data in Smart Agriculture with Temporal Fusion Transformers,Transactions on Computational Science & Computational Intelligence,,,,2022,Springer Nature
-"Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ",Self-Supervised Anomaly Detection for Detecting Rogue Sensors in IoT Data,"European Conference on Operational Research (EURO 2022), Date: 2022/07/03-2022/07/06, Location: Helsinki (Finland)",,,,2022,
-"Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ",Self-Supervised Anomaly Detection of Rogue Soil Moisture Sensors,"THE 26TH PACIFIC-ASIA CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING, Date: 2022/05/16-2022/05/19, Location: Chengdu, China",,,,2022,
+Authors,Title,Publication,Volume,Number,Pages,Year,Publisher
+Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ,Forecasting Sensor-data in Smart Agriculture with Temporal Fusion Transformers,Transactions on Computational Science & Computational Intelligence,,,,2022,Springer Nature
+Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ,Self-Supervised Anomaly Detection for Detecting Rogue Sensors in IoT Data,"European Conference on Operational Research (EURO 2022), Date: 2022/07/03-2022/07/06, Location: Helsinki (Finland)",,,,2022,
+Deforce, Boje; Baesens, Bart; Diels, Jan; Serral Asensio, Estefanía; ,Self-Supervised Anomaly Detection of Rogue Soil Moisture Sensors,"The 26th Pacific-Asia Conference on Knowledge Discovery and Data Mining, Date: 2022/05/16-2022/05/19, Location: Chengdu, China",,,,2022,
+Deforce, Boje; Baesens, Bart; Diels, Jan; Asensio, Estefanía Serral; ,MultiMix TFT: A Multi-task Mixed-Frequency Framework with Temporal Fusion Transformers,Conference on Lifelong Learning Agents,,,586-600,2023,PMLR
+Deforce, Boje; Baesens, Bart; Diels, Jan; Asensio, Estefanía Serral; ,Harnessing the power of transformers and data fusion in smart irrigation,Applied Soft Computing,152,,111246,2024,Elsevier
+Deforce, Boje; Lee, Meng-Chieh; Baesens, Bart; Asensio, Estefanía Serral; Yoo, Jaemin; Akoglu, Leman; ,End-To-End Self-tuning Self-supervised Time Series Anomaly Detection,arXiv preprint arXiv:2404.02865,,,,2024,
