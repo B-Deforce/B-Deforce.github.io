@@ -1,3 +1,10 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
 - [Deforce, B., Lee, M.-C., Baesens, B., Asensio, E. S., Yoo, J., & Akoglu, L. (2024). "End-To-End Self-tuning Self-supervised Time Series Anomaly Detection." arXiv preprint arXiv:2404.02865.](https://arxiv.org/abs/2404.02865)
 
 - [Deforce, B., Baesens, B., Diels, J., & Asensio, E. S. (2024). "Harnessing the power of transformers and data fusion in smart irrigation." *Applied Soft Computing*, Elsevier, 152, 111246.](https://doi.org/10.1016/j.asoc.2024.111246)
