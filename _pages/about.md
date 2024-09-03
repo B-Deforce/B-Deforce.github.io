@@ -13,6 +13,15 @@ PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-a
 Feel free to reach out at boje.deforce\[at\]kuleuven.be
 
 ### News
+📢 *Aug 2024*: I started an internship as applied scientist at Amazon. Here, I'll be working on causal inference with the European marketing team.
+
+
+📢 *Aug 2024*: Our paper *"Time-Series Foundation Models for Forecasting Soil Moisture Levels in Smart Agriculture"* has been presented at KDD '24 as part of the fragile earth workshop. Available on [OpenReview](https://openreview.net/forum?id=GZBGhi4JfE)
+
+
+📢 *April 2024*: The work done at Carnegie Mellon University is now available on [Arxiv](https://arxiv.org/abs/2404.02865)
+
+
 📢 *January 2024*: Our paper *"Harnessing the power of transformers and data fusion in smart irrigation"* has been published in [Applied Soft Computing](https://www.sciencedirect.com/science/article/abs/pii/S1568494624000206)
 
 
