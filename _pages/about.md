@@ -9,7 +9,7 @@ redirect_from:
 ---
 PhD researcher @[KU Leuven](https://feb.kuleuven.be/research/decision-sciences-and-information-management/liris/liris) under the supervision of Prof. Estefanía Serral Asensio, Prof. [Bart Baesens](https://www.bartbaesens.com/), and Prof. Jan Diels. I currently focus on AI/ML-solutions for the Internet of Things (i.e. time-series).
 
-I am also the co-founder and help manage [www.naos-optics.com](www.naos-optics.com) where I am responsible for online strategy and product development.
+I am also the co-founder of and help manage [www.naos-optics.com](www.naos-optics.com) where I am responsible for online strategy and product development.
 
 Feel free to reach out at boje\[dot\]deforce\[at\]gmail\[dot\]be
 
