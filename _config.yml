@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Boje Deforce"
   avatar           : "bd_pic.jpg"
-  bio              : "PhD researcher at KU Leuven, currently focused on data science for IoT applications"
-  location         : "Belgium"
+  bio              : "Technical business professional with experience in applied science, management consulting, and product development. Passionate about leveraging machine learning to translate cutting-edge research into business value."
+  location         : #"Belgium"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : https://scholar.google.com/citations?user=ZIhaSqIAAAAJ&hl=en
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
