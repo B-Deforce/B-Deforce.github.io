@@ -5,7 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-- [Deforce, B., Lee, M.-C., Baesens, B., Asensio, E. S., Yoo, J., & Akoglu, L. (2024). "End-To-End Self-tuning Self-supervised Time Series Anomaly Detection." arXiv preprint arXiv:2404.02865.](https://arxiv.org/abs/2404.02865)
+- [Deforce, B., Baesens, B., Diels, J., Janssens, P., Bonet, L.P.L., & Asensio, E.S. (2025). "Deep multi-task learning for stem water potential prediction" In *Computers and Electronics in Agriculture*, Vol. 229, 109747.](https://www.sciencedirect.com/science/article/abs/pii/S0168169924011384)
+
+- [Deforce, B., Lee, M.-C., Baesens, B., Asensio, E. S., Yoo, J., & Akoglu, L. (2024). "TSA on AutoPilot: Self-tuning Self-supervised Time Series Anomaly Detection" In *NeurIPS '24: Workshop on Self-Supervised Learning.*](https://openreview.net/forum?id=HmoNeNCmOj)
+
+- [Deforce, B., Baesens, B., \& Serral, E. (2024). "Time-Series Foundation Models for Forecasting Soil Moisture Levels in Smart Agriculture" In *KDD '24 Fragile Earth: Foundation Models for Sustainable Development.*](https://openreview.net/forum?id=GZBGhi4JfE)
 
 - [Deforce, B., Baesens, B., Diels, J., & Asensio, E. S. (2024). "Harnessing the power of transformers and data fusion in smart irrigation." *Applied Soft Computing*, Elsevier, 152, 111246.](https://doi.org/10.1016/j.asoc.2024.111246)
 
