@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="As AI agents move from step-by-step workflows into loops, version control becomes a practical way to preserve oversight without slowing the agent down."
+    >
+    <meta property="og:title" content="Version Control for AI Agents | Boje Deforce">
+    <meta
+      property="og:description"
+      content="Let the AI run. Just make sure you can still see what it changed."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="../assets/articles/version-control-ai-agents.png">
+    <title>Version Control for AI Agents | Boje Deforce</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="../index.html#top">Boje Deforce</a>
+      <nav aria-label="Primary navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#writing">Thoughts</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page article-page">
+      <article class="article-shell">
+        <a class="back-link" href="../index.html#writing">Back to thoughts</a>
+        <header class="article-hero">
+          <p class="eyebrow">AI workflows / Version control</p>
+          <h1>Version Control for AI Agents</h1>
+          <p class="article-dek">
+            As AI workflows become more loop-based, the question is no longer
+            whether the final result looks good. It is whether you can still see
+            what changed along the way.
+          </p>
+          <div class="article-meta">Boje Deforce · July 2026 · 6 min read</div>
+          <img
+            src="../assets/articles/version-control-ai-agents.png"
+            alt="A before and changed version of a life.md file showing deleted notes and a diff summary."
+          >
+        </header>
+
+        <div class="article-content">
+          <p>
+            My AI workflow has become much more iterative. Or perhaps more
+            accurately: much more loop-based. I used to inspect almost every
+            intermediate result. The AI would make a change, I would review it,
+            give feedback, and then ask it to continue. Now, I increasingly let
+            it run in loops.
+          </p>
+
+          <p>
+            In a classic dev scenario, an agent might inspect a codebase, change
+            several files, update documentation, run tests, fix what broke, and
+            repeat the process before I look at the result.
+          </p>
+
+          <p>
+            But the same pattern increasingly applies outside code. An AI agent
+            may restructure a work-in-progress project document, update business
+            rules, organize local files, or revise a preference set it uses for
+            future tasks.
+          </p>
+
+          <p>
+            While this is incredibly productive, there is one question I keep
+            coming back to: what did the AI agent actually change in this
+            iteration?
+          </p>
+
+          <p>Insert version control.</p>
+
+          <h2>From step-by-step workflows to loops</h2>
+          <p>
+            Early AI workflows were highly supervised. We asked for one output,
+            inspected it, corrected it, and moved to the next step. That still
+            works, but it does not fully reflect how agents increasingly operate.
+          </p>
+
+          <p>Today, we give AI broader objectives:</p>
+
+          <ul>
+            <li>Fix this feature</li>
+            <li>Improve this project plan</li>
+            <li>Clean up these files</li>
+            <li>Update these preferences</li>
+            <li>Refactor this workflow</li>
+          </ul>
+
+          <p>
+            The agent then enters a loop. It inspects the current state, makes
+            changes, evaluates the result, and makes further changes. Sometimes
+            it touches one file. Sometimes it touches twenty. This is where the
+            productivity gains become substantial, but it is also where visibility
+            starts to disappear.
+          </p>
+
+          <p>
+            The final result may look good. The tests may pass. The document may
+            read better. The folder may be cleaner. But what happened between the
+            previous state and this one? Call me old-fashioned, but I like to
+            stay at least somewhat in control.
+          </p>
+
+          <h2>Code is the obvious example</h2>
+          <p>
+            Software and ML developers already have a strong answer to this
+            problem: Git.
+          </p>
+
+          <p>
+            A coding agent may tell you that it fixed a bug, improved error
+            handling, and cleaned up related logic. That summary is useful, but
+            it is not the same as seeing the diff.
+          </p>
+
+          <ul>
+            <li>Did it only change the relevant function?</li>
+            <li>Did it modify configuration?</li>
+            <li>Did it add a dependency?</li>
+            <li>Did it remove a check that looked redundant but existed for a reason?</li>
+            <li>Did it clean up something unrelated while it was there?</li>
+          </ul>
+
+          <p>
+            When an agent is allowed to operate freely, reviewing every action is
+            often unrealistic. Reviewing the resulting changes is much more
+            practical. Version control provides that thin layer of oversight.
+          </p>
+
+          <p>
+            You do not have to watch every step. You can let the agent work, then
+            inspect exactly what was added, removed, or modified.
+          </p>
+
+          <h2>The same problem exists in project documents</h2>
+          <p>
+            This is not only a software problem. Suppose an AI agent is helping
+            you develop a work-in-progress project document.
+          </p>
+
+          <p>
+            The document contains confirmed decisions, unresolved questions,
+            rough ideas, assumptions, and several options that are still being
+            evaluated. You ask the AI to make it clearer and more coherent.
+          </p>
+
+          <p>
+            The result may genuinely be better, but it may also subtly change the
+            meaning.
+          </p>
+
+          <ul>
+            <li>"Option B is worth exploring" may become "Option B is recommended."</li>
+            <li>A tentative deadline may become a committed deadline.</li>
+            <li>A messy but important note may disappear because it did not fit the new structure.</li>
+            <li>Two distinct ideas may be merged because they appeared repetitive.</li>
+          </ul>
+
+          <p>
+            These changes are difficult to spot when you only see the polished
+            final version. The AI may not have made an obvious mistake. It may
+            simply have interpreted ambiguity differently than you would have.
+          </p>
+
+          <p>
+            A diff makes that interpretation visible. Instead of rereading the
+            entire document and trying to remember what changed, you can inspect
+            the specific sections that were rewritten, removed, softened, or made
+            more definitive.
+          </p>
+
+          <h2>The same applies to business logic</h2>
+          <p>
+            Many AI workflows now sit somewhere between code and documents. They
+            involve configuration files, operating procedures, customer rules,
+            analytical assumptions, prompt files, project instructions, or
+            internal knowledge.
+          </p>
+
+          <p>
+            These files may not look like software, but they can still influence
+            important outcomes. Imagine an agent updating a set of business rules:
+          </p>
+
+          <ul>
+            <li>Orders above a certain amount should be handled differently</li>
+            <li>Certain customers should be excluded</li>
+            <li>A metric should use a weighted average</li>
+            <li>A report should prioritize one source over another</li>
+          </ul>
+
+          <p>
+            A small change in wording can create a large change in behavior. If
+            the AI updates these rules over time, the current version is not
+            enough. You need to know what changed, why it changed, and whether
+            the change was intentional.
+          </p>
+
+          <p>
+            That is version control in spirit, even when the artifact is not code.
+          </p>
+
+          <h2>Even your preferences may become versioned</h2>
+          <p>
+            The same pattern appears in more personal workflows. Suppose an AI
+            assistant maintains a file containing your gym preferences, connected
+            to something like a Telegram bot.
+          </p>
+
+          <p>It may include:</p>
+
+          <ul>
+            <li>Preferred training frequency</li>
+            <li>Exercises you enjoy</li>
+            <li>Movements you temporarily want to avoid</li>
+            <li>Session length</li>
+            <li>Current goals</li>
+            <li>Available equipment</li>
+          </ul>
+
+          <p>
+            Over time, the AI updates this information based on your
+            conversations. While that can be helpful, it also creates a new
+            question: what did it learn, and what did it overwrite?
+          </p>
+
+          <p>
+            Perhaps you said you wanted shorter sessions during a busy month, and
+            the AI turned that into a permanent preference. Perhaps you avoided
+            one exercise because of temporary discomfort, and the AI now treats it
+            as something you never want included. Perhaps one unusual workout
+            causes it to alter the assumptions behind every future program.
+          </p>
+
+          <p>
+            Once AI systems maintain persistent context, preference files, or
+            memory, changes to that context matter. Those changes should be
+            inspectable too.
+          </p>
+
+          <h2>You do not need to watch everything</h2>
+          <p>
+            The point of version control is not to slow the AI down, but rather
+            to move quickly without forcing you to surrender control.
+          </p>
+
+          <p>In a loop-based workflow, the process can be simple:</p>
+
+          <ol>
+            <li>Preserve the current state</li>
+            <li>Let the agent work</li>
+            <li>Review the resulting diff</li>
+            <li>Accept, reject, or revise the changes</li>
+            <li>Repeat</li>
+          </ol>
+
+          <h2>Use Git, or just ask for the diff</h2>
+          <p>
+            For code and local text files, Git is the obvious solution. Commit
+            the current version before the agent starts. Let it work. Then inspect
+            the diff.
+          </p>
+
+          <p>
+            But the broader principle does not depend on Git. For documents, use
+            version history. For project folders, keep snapshots. For
+            configuration and preference files, preserve earlier versions.
+          </p>
+
+          <p>At the simplest level, ask the AI:</p>
+
+          <blockquote>
+            <p>What did you change compared with the previous version?</p>
+          </blockquote>
+
+          <p>Or:</p>
+
+          <blockquote>
+            <p>Before making changes, preserve the current state. When finished, show me the diff.</p>
+          </blockquote>
+
+          <p>The specific tool matters less than the habit.</p>
+
+          <h2>Creation is cheap. Traceability is valuable.</h2>
+          <p>
+            As AI becomes more capable, we will naturally give it more freedom.
+            We will stop reviewing every sentence it writes and every file it
+            touches. That is not necessarily careless. It is the point of
+            automation. But greater autonomy makes traceability more important,
+            not less.
+          </p>
+
+          <p>
+            When AI creates and edits at high speed, the latest version is not
+            enough. We also need a clear view of the path from the previous
+            version to the current one. Version control is a remarkably simple
+            way to maintain that view.
+          </p>
+
+          <p>
+            Let the AI run. Just make sure you can still see what it changed.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>2026 / Boje Deforce</p>
+      <p><a href="../index.html#writing">Thoughts</a></p>
+    </footer>
+  </body>
+</html>
