@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Agentic data science loops are not just about running more notebooks. The hard part is problem understanding, data understanding, and knowing what success means."
+    >
+    <meta property="og:title" content="Closing the (Data Science) Loop | Boje Deforce">
+    <meta
+      property="og:description"
+      content="A practical look at what makes agentic data science loops harder than coding loops."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="../assets/articles/software-factories-panel.png">
+    <title>Closing the (Data Science) Loop | Boje Deforce</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="../index.html#top">Boje Deforce</a>
+      <nav aria-label="Primary navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#writing">Thoughts</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page article-page">
+      <article class="article-shell">
+        <a class="back-link" href="../index.html#writing">Back to thoughts</a>
+        <header class="article-hero">
+          <p class="eyebrow">AI workflows / Data science</p>
+          <h1>Closing the (Data Science) Loop</h1>
+          <p class="article-dek">
+            Some thoughts after attending a 
+            Warp x Sequoia event about creating software factories, and what this means in a data 
+            science context.
+          </p>
+          <div class="article-meta">Boje Deforce · July 2026 · Draft</div>
+          <img
+            src="../assets/articles/software-factories-panel.png"
+            alt="Panel discussion at a Warp x Sequoia event about creating software factories."
+          >
+        </header>
+
+        <div class="article-content">
+          <p>
+            I recently attended a Warp x Sequoia event about creating software
+            factories. The panel had Peter
+            Steinberger (needs no introduction, legend), Paige Bailey from DeepMind, and Zach Lloyd, 
+            founder and CEO at Warp (I need to give their terminal a try). 
+            Pretty strong lineup.
+          </p>
+
+          <p>
+            The conversation stuck with me because it put words around something
+            I have been thinking about a lot lately: 
+            <a href="https://www.deeplearning.ai/the-batch/three-key-loops-for-building-great-software">agentic loops</a>. 
+            The AI workflow where you stop 
+            prompting step by step and instead design a small AI system that keeps going by itself
+            (through a suite of agents): 
+            inspect, act, check, write down state, repeat.
+          </p>
+
+          <p>
+            The point is that you go beyond just writing single prompts and instead design 
+            the machine that keeps prompting, checking, and deciding what happens next.
+          </p>
+
+          <p>
+            For software engineering, this is starting to make a lot of sense, especially when you
+            have good tests in place.
+          </p>
+
+          <p>
+            An agent can inspect a repo, make a change, run the tests, fix what
+            broke, open a PR, and leave you with a diff. It can still get things wrong, 
+            but the loop now has a heartbeat and can continue to evolve.
+          </p>
+
+          <p>
+            I've been wondering how this can translate to data science. So in this post I share that
+            wondering with you.
+          </p>
+
+          <p>
+            Agents can write SQL and Python pretty accurately. They can also train models, 
+            make plots (and inspect them), build dashboards, or summarize
+            experiments. So what's missing?
+          </p>
+
+          <p>
+            The hard part is knowing what problem is truly worth solving for the context you 
+            operate in and what "success" looks like.
+          </p>
+
+          <h2>The metric is the trap</h2>
+
+          <p>
+            A coding loop often has a decent stopping condition.
+          </p>
+
+          <p>
+            Tests pass. Lint is clean. The endpoint returns what it should. The
+            app builds.
+          </p>
+
+          <p>
+            That does not mean the work is <i>correct</i> or most optimal, but there is a clear
+            signal the loop can use.
+          </p>
+
+          <p>
+            Data science rarely gives you that for free.
+          </p>
+
+          <p>
+            You can improve AUC and still make the product worse. You can improve
+            recall and bury an operations team in false positives. You can reduce
+            average error and still fail on the only segment anyone cares about.
+            You can build a beautiful dashboard that answers the wrong question.
+          </p>
+
+          <p>
+            This is where I think a lot of agentic DS workflows will quietly go
+            wrong.
+          </p>
+
+          <p>
+            They will be very good at producing motion. New notebook. New chart.
+            New model. New experiment. New summary.
+          </p>
+
+          <blockquote class="article-callout">
+            <p>But motion is not (always) progress.</p>
+          </blockquote>
+
+          <p>
+            Progress depends on the metric. And the metric depends on the problem.
+          </p>
+
+          <p>
+            In fraud for example, better might mean catching more fraud at the same review
+            capacity. Or reducing customer friction while holding loss constant.
+            Or improving calibration so downstream rules behave better. Or making
+            alerts more useful for analysts. Or finding weird behavior early
+            enough that someone can still act on it.
+          </p>
+
+          <p>
+            All of these are not the same problem and require a different metric to optimize over.
+          </p>
+
+          <p>
+            An agent needs to <i>know</i> which one it is solving or it will just happily pick one
+            for you; explicitly or, worse, implicitly.
+          </p>
+
+          <h2>Data understanding is not a profiling report</h2>
+
+          <p>
+            The second hard part imho is the data.
+          </p>
+
+          <p>
+            Agents are already pretty good at shallow data understanding. Give
+            them a table and they can profile it. Missing values, distributions,
+            correlations, outliers, basic summaries. Useful for sure, but not enough.
+          </p>
+
+          <p>
+            But deep data understanding is different. It is knowing why a column exists. 
+            When it is populated. Whether it would exist at prediction time. 
+            Whether it leaks the future. Whether
+            missing means missing, not applicable, delayed, broken upstream, or
+            customer never answered.
+          </p>
+
+          <p>
+            It is knowing that labels are often <i>political</i>, delayed, incomplete,
+            or just proxies for something we wish we could observe directly.
+          </p>
+
+          <p>
+            It is knowing that a clean-looking dataset can encode a messy
+            business process.
+          </p>
+
+          <p>
+            This matters because a data science agent can very easily do the
+            technically correct thing with the wrong interpretation.
+          </p>
+
+          <p>
+            And honestly, humans do this too. The agent just does it faster...
+          </p>
+
+          <h2>What would a useful DS loop actually do? Some first thoughts.</h2>
+
+          <p>
+            The version I would trust does not start by training models, 
+            but rather by trying to understand the setup.
+          </p>
+
+          <p>
+            What decision are we improving? Who uses the output? What happens if
+            the model is wrong? What is the current baseline? What does success
+            mean? What would make the work useless, even if the metric improves? These questions
+            are already a lot harder to answer in an automated loop.
+          </p>
+
+          <p>
+            Once those (hard) questions are answered, the agent can look at the data.
+          </p>
+
+          <p>
+            Not just here are the nulls, but here are the things that might make
+            this experiment invalid. Time leakage. Label delay. Weird joins.
+            Segment drift. Suspiciously predictive columns. Data that exists
+            offline but not in production.
+          </p>
+
+          <p>
+            Only after that should it start running experiments.
+          </p>
+
+          <p>
+            And even then, the loop should keep asking annoying questions.
+          </p>
+
+          <ul>
+            <li>Did the metric improve on the right population?</li>
+            <li>Did we beat a dumb baseline?</li>
+            <li>Did we just overfit a time period?</li>
+            <li>Did a small group get worse?</li>
+            <li>Is the improvement big enough to matter?</li>
+            <li>Would this survive production?</li>
+          </ul>
+
+          <p>
+            That is the shape I'd want.
+          </p>
+
+          <p>
+            Not an agent that blindly searches for a better score. An agent that
+            keeps the problem, metric, and data assumptions in the loop.
+          </p>
+
+          <h2>The human does not disappear</h2>
+
+          <p>
+            But this is where I think the software factory metaphor gets
+            interesting for data science.
+          </p>
+
+          <p>
+            A factory needs quality control. Otherwise it just produces more
+            stuff (a.k.a. AI slop).
+          </p>
+
+          <p>
+            For data science, quality control is not only tests. It is metric
+            design, slice analysis, baseline comparisons, leakage checks,
+            business review, and (human?) judgment about trade-offs; though I do 
+            believe judgment <i>can</i> be learned by agents too for the record.
+          </p>
+
+          <p>
+            Some of that can be automated. Some of it can be delegated to
+            (human-infused) evaluator agents. Some of it should be written down as durable
+            project context.
+          </p>
+
+          <p>
+            But some of it is still (for now) just the data scientist saying: wait, this
+            metric is not what we actually care about.
+          </p>
+
+          <p>
+            Or: this looks better offline, but I do not believe it will work in
+            production.
+          </p>
+
+          <p>
+            Or: this segment matters more than the aggregate number suggests.
+          </p>
+
+          <p>
+            That judgment is the job.
+          </p>
+
+          <p>
+            The agent can make the loop faster. It can keep track of experiments,
+            generate candidates, run evaluations, and summarize trade-offs. Great.
+            I want that.
+          </p>
+
+          <p>
+            But if the loop does not understand the problem, it will happily
+            optimize the wrong thing all night while I'm sound asleep.
+          </p>
+
+          <h2>Closing the loop</h2>
+
+          <p>
+            So yes, I think agentic data science loops are coming (and are already partly there).
+          </p>
+
+          <p>
+            The challenging part is to build loops that understand
+            enough problem context to be useful. A loop that knows/understands the metric. 
+            A loop that remembers - and updates - the data assumptions through the process. 
+            A loop that compares against useful baselines. 
+            A loop that surfaces trade-offs instead of hiding them in
+            a single score.
+          </p>
+
+          <blockquote class="article-callout">
+            <p>The loop is not closed when the model trains.</p>
+          </blockquote>
+
+          <p>
+            It is closed when the system can connect the experiment back to the
+            problem we actually meant to solve.
+          </p>
+
+          <p>
+            That is the hard part imho.
+          </p>
+
+          <p>
+            And probably the fun part too.
+          </p>
+
+          <p>
+            In the coming weeks, I will experiment and play around more with these ideas, so I might
+            post a part 2, we'll see.
+          </p>
+
+          <p>
+            So yes, I am excited about software factories. I just think the data science version only gets interesting once the factory learns to keep asking: are we still solving the right problem?
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>2026 / Boje Deforce</p>
+      <p><a href="../index.html#writing">Thoughts</a></p>
+    </footer>
+  </body>
+</html>
