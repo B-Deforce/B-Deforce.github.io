@@ -22,7 +22,11 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="../index.html#top">Boje Deforce</a>
-      <nav aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-icon" aria-hidden="true"></span>
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
         <a href="../index.html#work">Work</a>
         <a href="../index.html#experience">Experience</a>
         <a href="../index.html#research">Research</a>
@@ -354,5 +358,6 @@
       <p>2026 / Boje Deforce</p>
       <p><a href="../index.html#writing">Thoughts</a></p>
     </footer>
+    <script src="../assets/site.js" defer></script>
   </body>
 </html>
