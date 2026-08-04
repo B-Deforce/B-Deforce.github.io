@@ -1,0 +1,297 @@
+/* Signal studio visual layer: technical, calm, and intentionally not corporate blue-grid. */
+:root {
+  color-scheme: light;
+  --bg: #f5f3ef;
+  --surface: rgba(255, 254, 251, 0.8);
+  --surface-soft: #ece8e1;
+  --ink: #1a1b1d;
+  --muted: #62615e;
+  --line: rgba(55, 52, 47, 0.18);
+  --line-soft: rgba(55, 52, 47, 0.1);
+  --accent: #bd7c4b;
+  --accent-dark: #744827;
+  --accent-soft: rgba(189, 124, 75, 0.13);
+  --shadow: 0 20px 55px rgba(35, 33, 30, 0.12);
+  --violet: #4f6d8a;
+  --mint: #7c5b43;
+  --sun: #d39a5b;
+  --online: #607b94;
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 8%, rgba(189, 124, 75, 0.14), transparent 24rem),
+    radial-gradient(circle at 92% 16%, rgba(79, 109, 138, 0.13), transparent 27rem),
+    radial-gradient(circle at 78% 92%, rgba(211, 154, 91, 0.12), transparent 25rem),
+    var(--bg);
+  background-attachment: fixed;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+  opacity: 0.38;
+  background-image: radial-gradient(rgba(35, 33, 30, 0.23) 0.7px, transparent 0.7px);
+  background-size: 13px 13px;
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+}
+
+.site-header {
+  width: min(1120px, calc(100% - 32px));
+  top: 14px;
+  margin-bottom: 14px;
+  padding: 13px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 10px 30px rgba(35, 33, 30, 0.09);
+}
+
+.page,
+.footer {
+  width: min(1120px, calc(100% - 32px));
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.04em;
+}
+
+.wordmark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  content: "";
+  background: var(--online);
+  box-shadow: 0 0 0 4px rgba(96, 123, 148, 0.14), 0 0 14px rgba(96, 123, 148, 0.42);
+  transform: none;
+}
+
+nav {
+  gap: 5px;
+}
+
+nav a {
+  padding: 5px 8px;
+  border-radius: 999px;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.hero {
+  position: relative;
+  min-height: 59svh;
+  padding-top: clamp(58px, 9vw, 110px);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow,
+.project-type {
+  color: var(--accent-dark);
+  letter-spacing: 0.08em;
+}
+
+.eyebrow::before {
+  margin-right: 8px;
+  color: var(--mint);
+  content: "";
+}
+
+h1 {
+  max-width: 790px;
+  font-size: clamp(1.7rem, 3.15vw, 2.75rem);
+  letter-spacing: -0.045em;
+}
+
+.rotating-role {
+  color: var(--violet);
+  text-decoration-color: rgba(189, 124, 75, 0.62);
+  text-decoration-style: wavy;
+}
+
+.button {
+  border-color: rgba(79, 109, 138, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  box-shadow: 0 6px 16px rgba(35, 33, 30, 0.07);
+}
+
+.actions .button:first-child {
+  border-color: transparent;
+  background: linear-gradient(110deg, var(--accent), var(--sun));
+  color: var(--ink);
+}
+
+.button:hover,
+.button:focus-visible {
+  border-color: transparent;
+  background: var(--ink);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.system-card {
+  position: relative;
+  z-index: 1;
+  border-color: #292a29;
+  border-radius: 18px;
+  background: #18191b;
+  box-shadow: 0 22px 52px rgba(20, 20, 20, 0.22);
+}
+
+.system-topline {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.system-topline span:nth-child(1) { background: var(--accent); }
+.system-topline span:nth-child(2) { background: var(--sun); }
+.system-topline span:nth-child(3) { background: #8393a3; }
+
+.system-card pre {
+  position: relative;
+  z-index: 1;
+  color: #f1f0ed;
+}
+
+.section {
+  border-color: var(--line);
+}
+
+.section-label span {
+  color: var(--accent-dark);
+}
+
+.section-label h2 {
+  letter-spacing: -0.03em;
+}
+
+.project-card,
+.skill-grid article,
+.timeline article,
+.scholar-card,
+.note-list {
+  border-color: rgba(255, 255, 255, 0.72);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.project-card::before,
+.timeline article::before,
+.skill-grid article::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background: linear-gradient(90deg, var(--accent), var(--sun));
+}
+
+.project-card:nth-child(3n + 2)::before,
+.skill-grid article:nth-child(2)::before,
+.timeline article:nth-child(3n + 2)::before { background: linear-gradient(90deg, var(--violet), #8195aa); }
+.project-card:nth-child(3n)::before,
+.skill-grid article:nth-child(3)::before,
+.timeline article:nth-child(3n)::before { background: linear-gradient(90deg, var(--mint), #b78a67); }
+
+.project-card:hover,
+.project-card:focus-within,
+.skill-grid article:hover,
+.skill-grid article:focus-within,
+.timeline article:hover,
+.timeline article:focus-within,
+.scholar-card:hover,
+.scholar-card:focus-within {
+  border-color: rgba(189, 124, 75, 0.38);
+  box-shadow: 0 26px 60px rgba(35, 33, 30, 0.16);
+  transform: translateY(-6px) rotate(-0.15deg);
+}
+
+.timeline span,
+.card-link,
+.paper-list .paper-tag {
+  color: var(--violet);
+}
+
+.note-list a:hover,
+.note-list a:focus-visible,
+.paper-list a:hover,
+.paper-list a:focus-visible {
+  background: rgba(189, 124, 75, 0.08);
+  color: var(--accent-dark);
+}
+
+.article-hero h1 {
+  color: var(--ink);
+}
+
+.article-hero img {
+  border-radius: 20px;
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.article-content blockquote {
+  border-color: var(--accent);
+}
+
+.article-content a {
+  color: var(--accent-dark);
+  text-decoration-color: rgba(189, 124, 75, 0.4);
+}
+
+.footer {
+  color: var(--muted);
+}
+
+:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    top: 0;
+    border-radius: 0 0 18px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  nav a,
+  .project-card,
+  .skill-grid article,
+  .timeline article,
+  .scholar-card {
+    transition: none;
+  }
+
+  .button:hover,
+  .button:focus-visible,
+  .project-card:hover,
+  .project-card:focus-within,
+  .skill-grid article:hover,
+  .skill-grid article:focus-within,
+  .timeline article:hover,
+  .timeline article:focus-within,
+  .scholar-card:hover,
+  .scholar-card:focus-within {
+    transform: none;
+  }
+}

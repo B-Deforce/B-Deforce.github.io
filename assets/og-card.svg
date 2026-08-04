@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
-  <rect width="1200" height="630" fill="#f7f5f0"/>
-  <path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630" stroke="#ebe8df" stroke-width="2"/>
-  <rect x="110" y="110" width="980" height="410" rx="28" fill="#fffdfa" stroke="#dedbd2"/>
-  <text x="160" y="240" fill="#111111" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700">Boje Deforce</text>
-  <text x="160" y="320" fill="#111111" font-family="Consolas, monospace" font-size="34">Senior Data Scientist / AI Product Builder / Co-Founder</text>
-  <text x="160" y="392" fill="#66635c" font-family="Consolas, monospace" font-size="28">Production ML systems, AI agents, research, startups.</text>
+  <rect width="1200" height="630" fill="#f5f3ef"/>
+  <circle cx="1040" cy="110" r="260" fill="#4f6d8a" opacity=".13"/>
+  <circle cx="135" cy="560" r="260" fill="#bd7c4b" opacity=".14"/>
+  <path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630" stroke="#e2ddd4" stroke-width="2"/>
+  <rect x="110" y="110" width="980" height="410" rx="28" fill="#fffefb" stroke="#d6cec3"/>
+  <text x="160" y="240" fill="#1a1b1d" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700">Boje Deforce</text>
+  <text x="160" y="320" fill="#1a1b1d" font-family="Consolas, monospace" font-size="34">Senior Data Scientist / AI Product Builder / Co-Founder</text>
+  <text x="160" y="392" fill="#62615e" font-family="Consolas, monospace" font-size="28">Production ML systems, AI agents, research, startups.</text>
 </svg>
