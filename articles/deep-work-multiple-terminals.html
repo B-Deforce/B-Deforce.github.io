@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="How I use short periods of focused thinking to keep several projects moving with coding agents."
+    >
+    <meta property="og:title" content="Deep Work in the Age of Multiple Terminals | Boje Deforce">
+    <meta
+      property="og:description"
+      content="A personal reflection on focus, context switching, and working with several coding agents at once."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="../assets/articles/deep-work-book-hero.png">
+    <title>Deep Work in the Age of Multiple Terminals | Boje Deforce</title>
+    <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon-bd-512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../visual-refresh.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="../index.html#top">Boje Deforce</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-icon" aria-hidden="true"></span>
+        <span class="menu-toggle-label">Menu</span>
+      </button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#writing">Thoughts</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page article-page">
+      <article class="article-shell">
+        <a class="back-link" href="../index.html#writing">Back to thoughts</a>
+        <header class="article-hero">
+          <p class="eyebrow">AI workflows / Deep work</p>
+          <h1>Deep Work in the Age of Multiple Terminals</h1>
+          <p class="article-dek">
+            Working with several coding agents has changed how I divide my
+            attention across a day.
+          </p>
+          <div class="article-meta">Boje Deforce · August 2026</div>
+          <img
+            src="../assets/articles/deep-work-book-hero.png"
+            alt="A copy of Cal Newport's Deep Work on a wooden surface."
+          >
+        </header>
+
+        <div class="article-content">
+          <p>
+            About five years ago, I read <i>Deep Work</i> by Cal Newport for the
+            first time. The main idea was pretty straightforward: being able to
+            focus, without interruption, on something cognitively demanding is
+            becoming rare, and therefore valuable. I found the idea genuinely useful.
+          </p>
+
+          <p>
+            Like many people who discover a productivity philosophy, I turned it
+            into a minor personal science project. Time blocking. Notifications
+            off. Phone in another room. Different music, different environments,
+            different times of day. Pomodoro. No Pomodoro. The bottom line was to
+            lock in and get sh*t done.
+          </p>
+
+          <p>
+            The goal was one continuous thread of concentration. These days, a
+            productive session often looks rather different. I may have one coding
+            agent investigating a bug, another implementing a feature, and a third
+            reading an unfamiliar part of a codebase. Each has its own terminal and
+            its own chance of doing something surprisingly good or surprisingly
+            weird.
+          </p>
+
+          <h2>Thinking in goals</h2>
+
+          <p>
+            I have started thinking less in terms of isolated tasks and more in
+            terms of a few goals I want to move forward. On a given day that could
+            include an AI project or work-related task, an unfamiliar technology I want to
+            understand, a trip I need to plan, and adding an automation to
+            <a href="https://www.naos-optics.com" rel="noreferrer">my side-hustle</a>.
+          </p>
+
+          <p>
+            Several of them can be active without all of them demanding my
+            attention at the same moment. Keeping a small set of goals in mind feels
+            manageable. Following every update from every terminal does not.
+          </p>
+
+          <p>
+            It helps when I can connect the projects to a loose idea of what I want
+            from the day. They do not have to belong to the same area of my life.
+            They only need to form a set small enough that I remember why I started
+            each one and what progress would look like.
+          </p>
+
+          <h2>A short burst of focus</h2>
+
+          <p>
+            Before I send an LLM off, I spend some uninterrupted time with the
+            problem myself. I try to get clear on the outcome, the constraints, and
+            the context it will need. This often results in a fairly elaborate
+            prompt.
+          </p>
+
+          <p>
+            The prompt matters later as well. If the agent understands the larger
+            goal, I can steer it without explaining the whole project again every
+            time. The initial thinking may only take a few minutes, though it still
+            requires the sort of concentration I used to associate with a much
+            longer working session.
+          </p>
+
+          <p>
+            I also tend to babysit the beginning. I watch how the agent interprets
+            the request, where it starts looking, and whether its first decisions
+            make sense. An early misunderstanding rarely fixes itself; it usually
+            grows into a larger one.
+          </p>
+
+          <p>
+            At some point I get the sense that it is on its way. It has enough
+            context, the direction looks sensible, and it should be fine for ten or
+            fifteen minutes. Sometimes much longer. That is when I return to
+            something else, often a project I started earlier that is now ready for
+            review.
+          </p>
+
+          <h2>Issues as a thinking queue</h2>
+
+          <p>
+            A variation I increasingly like is to move the handoff out of the
+            terminal and into GitHub Issues. It looks a lot like a traditional
+            software-engineering workflow: open an issue for a piece of work, give
+            it enough context, and let the implementation follow from there. The
+            difference is that the next assignee may be an agent.
+          </p>
+
+          <p>
+            Writing the issue becomes the deep-thinking part. I describe the
+            problem, why it matters, the relevant parts of the codebase or project,
+            constraints, edge cases, and what a good result should look like. Links
+            to earlier decisions, examples, and explicit acceptance criteria all help.
+            Writing it down as a GitHub issue also forces me to think deeply about the
+            problem at hand.
+          </p>
+
+          <p>
+            The agent can then investigate and implement against that brief while
+            the issue preserves the reasoning behind the work. Commits, discussion,
+            checks, and eventually a pull request create a trace from the original
+            problem to the proposed solution. When I return, I am reviewing an
+            artifact with history rather than reconstructing what happened from a
+            terminal transcript.
+          </p>
+
+          <p>
+            Meanwhile, I can focus on describing the next issue in the same
+            repository, or move to a completely different one. This separates
+            thinking from execution without making the thinking disposable. It
+            also reduces the urge to watch every line of output: the unit of work
+            is the issue, not the terminal session.
+          </p>
+
+          <h2>What gets offloaded</h2>
+
+          <p>
+            The LLM takes over a large part of the sustained execution. It can trace
+            a bug, read documentation, compare approaches, implement something, and
+            run checks while I am elsewhere. I still have to decide what the problem
+            is, give it direction, notice when it has misunderstood, and judge the
+            result.
+          </p>
+
+          <p>
+            My periods of concentration have become shorter and more frequent. I
+            use them to understand and frame a problem well enough that someone/thing
+            can continue without me. Then I come back when judgment is
+            needed again.
+          </p>
+
+          <h2>Five terminals are still five terminals</h2>
+
+          <p>
+            Switching still costs something. Moving from a bug to
+            cleaning up my inbox, or from one codebase to another, means loading a different set
+            of details into my head. With too much in flight, the terminals become
+            open loops competing for attention.
+          </p>
+
+          <p>
+            I felt this fairly quickly when I began using agents in parallel. It is
+            easy to replace checking Slack with checking terminal output and call
+            it productivity. Every new line creates a reason to peek, and every peek
+            makes it a little harder to remember what I was doing elsewhere.
+          </p>
+
+          <p>
+            So I try to wait until an agent has a good stretch of independent work
+            ahead of it before switching. I also keep the overall set of goals
+            small. The point is to give each problem a proper thinking pass and let
+            the agent carry it forward, rather than bounce between terminals all
+            day.
+          </p>
+
+          <p>
+            On a good day, several projects move forward and I have thought
+            seriously about each of them. They stay connected by the broader goals
+            I chose for the day, which makes the switching feel less random.
+          </p>
+
+          <p>
+            This has changed what deep work looks like for me. More of my attention
+            now goes into understanding a problem well enough to set it in motion.
+            The agent handles much of what happens next. I return to make decisions,
+            correct the direction, or fit the result back into the larger project.
+          </p>
+
+          <p>
+            I have come to think of this as deep thinking rather than deep work. The
+            focus comes in bursts, and the difficult part is knowing when I have
+            thought enough to hand the problem over, and when I should stay with it a
+            little longer.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>2026 / Boje Deforce</p>
+      <p><a href="../index.html#writing">Thoughts</a></p>
+    </footer>
+    <script src="../assets/site.js" defer></script>
+  </body>
+</html>
